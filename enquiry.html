@@ -3,16 +3,344 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Goel Group of Institutions Enquiry Form</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .header {
+            text-align: center;
+        }
+        .header img {
+            width: 100px;
+        }
+        .header h1 {
+            margin: 10px 0;
+        }
+        .form-section {
+            border: 1px solid #000;
+            padding: 20px;
+            margin-bottom: 20px;
+        }
+        .form-section h2 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+        .form-group {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 10px;
+        }
+        .form-group label {
+            width: 30%;
+        }
+        .form-group input, .form-group select {
+            width: 65%;
+        }
+        .courses {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+        }
+        .courses .course-category {
+            width: 45%;
+            margin-bottom: 20px;
+        }
+        .course-category h3 {
+            margin-bottom: 10px;
+        }
+        .course-category ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        .course-category li {
+            margin-bottom: 5px;
+        }
+        .signature-section {
+            display: flex;
+            justify-content: space-between;
+        }
+        .signature-section div {
+            width: 45%;
+            text-align: center;
+            border: 1px solid #000;
+            padding: 10px;
+        }
+    </style>
 </head>
 <body>
-    <h1>Student Enquiry Form</h1>
-    <form action="" method="post">
-        <table>
-            <tr>
-                
-            </tr>
-        </table>
-    </form>
+    <div class="container">
+        <div class="header">
+            <img src="logo.png" alt="Goel Group of Institutions">
+            <h1>Goel Group of Institutions</h1>
+            <p>Under Roop Chand Ramji Lal Educational Trust</p>
+            <p>Near Indira Canal, Faizabad Road, Lucknow-226028</p>
+            <p>Phone: 9044066897/98 + 919793445559, 8801742948, 7307750540/505/514/515</p>
+            <p>Website: <a href="http://www.goel.edu.in">www.goel.edu.in</a> | Email: info@goel.edu.in</p>
+        </div>
+        <form>
+            <div class="form-section">
+                <h2>Enquiry Form</h2>
+                <div class="form-group">
+                    <label for="student-name">Student's Name (As per High School Certificate)</label>
+                    <input type="text" id="student-name" name="student-name">
+                </div>
+                <div class="form-group">
+                    <label for="student-name-hindi">Student's Name in Hindi</label>
+                    <input type="text" id="student-name-hindi" name="student-name-hindi">
+                </div>
+                <div class="form-group">
+                    <label for="fathers-name">Father's Name (As per High School Certificate)</label>
+                    <input type="text" id="fathers-name" name="fathers-name">
+                </div>
+                <div class="form-group">
+                    <label for="whatsapp-no">WhatsApp No</label>
+                    <input type="text" id="whatsapp-no" name="whatsapp-no">
+                </div>
+                <div class="form-group">
+                    <label for="mothers-name">Mother's Name (As per High School Certificate)</label>
+                    <input type="text" id="mothers-name" name="mothers-name">
+                </div>
+                <div class="form-group">
+                    <label for="phone">Phone No</label>
+                    <input type="text" id="phone" name="phone">
+                </div>
+                <div class="form-group">
+                    <label for="email">E-mail</label>
+                    <input type="email" id="email" name="email">
+                </div>
+                <div class="form-group">
+                    <label for="address">Address</label>
+                    <input type="text" id="address" name="address">
+                </div>
+                <div class="form-group">
+                    <label for="dob">Date of Birth (DD-MM-YYYY)</label>
+                    <input type="text" id="dob" name="dob">
+                </div>
+                <div class="form-group">
+                    <label for="aadhaar">Aadhaar No</label>
+                    <input type="text" id="aadhaar" name="aadhaar">
+                </div>
+                <div class="form-group">
+                    <label for="fathers-occupation">Father's Occupation</label>
+                    <select id="fathers-occupation" name="fathers-occupation">
+                        <option value="agriculture">Agriculture</option>
+                        <option value="private-service">Private Service</option>
+                        <option value="govt-service">Govt. Service</option>
+                        <option value="business">Business</option>
+                        <option value="others">Others</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="parents-income">Parent's Income</label>
+                    <select id="parents-income" name="parents-income">
+                        <option value="above-2-lakh">Above 2 lakh</option>
+                        <option value="below-2-lakh">Below 2 lakh</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="entrance-exam">Entrance Exam (If Any)</label>
+                    <input type="text" id="entrance-exam" name="entrance-exam">
+                </div>
+                <div class="form-group">
+                    <label for="rank">Rank (If Any)</label>
+                    <input type="text" id="rank" name="rank">
+                </div>
+                <div class="form-group">
+                    <label for="roll-no">Roll No (If Any)</label>
+                    <input type="text" id="roll-no" name="roll-no">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Courses Preferred</h2>
+                <div class="courses">
+                    <div class="course-category">
+                        <h3>B. Tech.</h3>
+                        <ul>
+                            <li><input type="checkbox" name="btech-first"> First</li>
+                            <li><input type="checkbox" name="btech-lateral"> Lateral</li>
+                            <li><input type="checkbox" name="computer-science"> Computer Science & Engineering</li>
+                            <li><input type="checkbox" name="it"> Information Technology</li>
+                            <li><input type="checkbox" name="ai-ml"> Computer Science & Engineering (AI & ML)</li>
+                            <li><input type="checkbox" name="data-science"> Computer Science & Engineering (Data Science)</li>
+                            <li><input type="checkbox" name="electrical-engineering"> Electrical Engineering</li>
+                            <li><input type="checkbox" name="civil-engineering"> Civil Engineering</li>
+                            <li><input type="checkbox" name="mechanical-engineering"> Mechanical Engineering</li>
+                            <li><input type="checkbox" name="biotechnology"> Biotechnology</li>
+                            <li><input type="checkbox" name="ece"> Electronics & Communication Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>M. Tech.</h3>
+                        <ul>
+                            <li><input type="checkbox" name="mtech-computer-science"> Computer Science & Engineering</li>
+                            <li><input type="checkbox" name="mtech-mechanical"> Mechanical Engineering</li>
+                            <li><input type="checkbox" name="mtech-ece"> Electronics & Communication Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>Diploma in Engineering</h3>
+                        <ul>
+                            <li><input type="checkbox" name="diploma-first"> First</li>
+                            <li><input type="checkbox" name="diploma-lateral"> Lateral</li>
+                            <li><input type="checkbox" name="diploma-mechanical-production"> Mechanical Engg. (Production)</li>
+                            <li><input type="checkbox" name="diploma-civil"> Civil Engg.</li>
+                            <li><input type="checkbox" name="diploma-electrical"> Electrical Engg.</li>
+                            <li><input type="checkbox" name="diploma-auto-mobile"> Mechanical Engg. (Auto Mobile)</li>
+                            <li><input type="checkbox" name="diploma-computer-science"> Computer Science & Engineering</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>Pharmacy</h3>
+                        <ul>
+                            <li><input type="checkbox" name="pharmacy-first"> First</li>
+                            <li><input type="checkbox" name="pharmacy-lateral"> Lateral</li>
+                            <li><input type="checkbox" name="bpharm"> B.Pharm.</li>
+                            <li><input type="checkbox" name="dpharm"> D.Pharm.</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>M. Pharm.</h3>
+                        <ul>
+                            <li><input type="checkbox" name="pharmaceutics"> Pharmaceutics</li>
+                            <li><input type="checkbox" name="industrial-pharmacy"> Industrial Pharmacy *</li>
+                            <li><input type="checkbox" name="pharmacology"> Pharmacology</li>
+                            <li><input type="checkbox" name="pharmaceutical-chemistry"> Pharmaceutical Chemistry</li>
+                            <li><input type="checkbox" name="pharmaceutical-quality-assurance"> Pharmaceutical Quality Assurance *</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>Management</h3>
+                        <ul>
+                            <li><input type="checkbox" name="mba"> M.B.A</li>
+                            <li><input type="checkbox" name="bba"> B.B.A.</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>Ayurvedic Medical</h3>
+                        <ul>
+                            <li><input type="checkbox" name="bams"> B.A.M.S.</li>
+                        </ul>
+                    </div>
+                    <div class="course-category">
+                        <h3>Lucknow University Courses</h3>
+                        <ul>
+                            <li><input type="checkbox" name="bca"> B.C.A</li>
+                            <li><input type="checkbox" name="bva"> B.V.A.</li>
+                            <li><input type="checkbox" name="bcom-hons"> B.Com.(Hons.)</li>
+                            <li><input type="checkbox" name="bcom"> B.Com</li>
+                            <li><input type="checkbox" name="bfa"> B.F.A.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Student Academic Record</h2>
+                <div class="form-group">
+                    <label for="high-school-year">High School</label>
+                    <input type="text" id="high-school-year" name="high-school-year" placeholder="Year">
+                    <input type="text" id="high-school-percentage" name="high-school-percentage" placeholder="%">
+                </div>
+                <div class="form-group">
+                    <label for="intermediate-year">Intermediate</label>
+                    <input type="text" id="intermediate-year" name="intermediate-year" placeholder="Year">
+                    <input type="text" id="intermediate-percentage" name="intermediate-percentage" placeholder="%">
+                </div>
+                <div class="form-group">
+                    <label for="graduation-year">Graduation</label>
+                    <input type="text" id="graduation-year" name="graduation-year" placeholder="Year">
+                    <input type="text" id="graduation-percentage" name="graduation-percentage" placeholder="%">
+                </div>
+                <div class="form-group">
+                    <label for="diploma-year">Diploma</label>
+                    <input type="text" id="diploma-year" name="diploma-year" placeholder="Year">
+                    <input type="text" id="diploma-percentage" name="diploma-percentage" placeholder="%">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Stream</h2>
+                <div class="form-group">
+                    <label for="stream">Stream (PCM/PCB/Art/Com/Etc.)</label>
+                    <input type="text" id="stream" name="stream">
+                </div>
+                <h2>For B.Tech. & B.Pharm. (Qualifying Subjects %)</h2>
+                <div class="form-group">
+                    <label for="phy">Phy%</label>
+                    <input type="text" id="phy" name="phy">
+                </div>
+                <div class="form-group">
+                    <label for="chem">Chem%</label>
+                    <input type="text" id="chem" name="chem">
+                </div>
+                <div class="form-group">
+                    <label for="maths">Math%</label>
+                    <input type="text" id="maths" name="maths">
+                </div>
+                <div class="form-group">
+                    <label for="bio">Bio%</label>
+                    <input type="text" id="bio" name="bio">
+                </div>
+                <div class="form-group">
+                    <label for="total">Total%</label>
+                    <input type="text" id="total" name="total">
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Category</h2>
+                <div class="form-group">
+                    <label for="category">Category (✔)</label>
+                    <select id="category" name="category">
+                        <option value="gen">GEN</option>
+                        <option value="obc">OBC</option>
+                        <option value="sc">SC</option>
+                        <option value="st">ST</option>
+                        <option value="min">MIN</option>
+                    </select>
+                </div>
+            </div>
+
+            <div class="form-section">
+                <h2>Medium of Education (in 12th)</h2>
+                <div class="form-group">
+                    <label for="medium-education">Medium of Education (in 12th) (✔)</label>
+                    <select id="medium-education" name="medium-education">
+                        <option value="english">English</option>
+                        <option value="hindi">Hindi</option>
+                    </select>
+                </div>
+                <div class="form-group">
+                    <label for="school-board">School & Board</label>
+                    <input type="text" id="school-board" name="school-board">
+                </div>
+            </div>
+
+            <div class="signature-section">
+                <div>
+                    <p>Photo of candidate</p>
+                </div>
+                <div>
+                    <p>Left Thumb Impression of candidate</p>
+                </div>
+            </div>
+
+            <div class="form-group">
+                <label for="reference">How did you hear about us/ Reference</label>
+                <input type="text" id="reference" name="reference">
+            </div>
+            <div class="form-group">
+                <label for="signature">Signature of Student</label>
+                <input type="text" id="signature" name="signature">
+            </div>
+        </form>
+    </div>
 </body>
 </html>
